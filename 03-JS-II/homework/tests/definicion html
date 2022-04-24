@@ -1,0 +1,2 @@
+* `for`: es un ciclo que permite repetir varias veces y a su vez tiene un contador cada vez que realiza un ciclo se puede programar cuantos ciclos debe dar o ser infinito
+* `&&`, `||`, `!` esto son operadores logicos que nos ayudan a expresar las palabras y, o, o no, al programa

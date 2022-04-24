@@ -146,44 +146,36 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return math.pow(num,exponent);
+  return Math.pow(num,exponent);
   
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var resto = num % 1;
-  var entero = num - resto;
-  if (resto >= 0.5) {
-    return entero + 1;
-  } else {
-    return entero
-    return math.round(num);
-  }
-  
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código: 
-   return math.ceil(num);
-  
+  return Math.ceil(num);
 }
 
   function numeroRandom() {
     //Generar un número al azar entre 0 y 1 y devolverlo
     //Pista: investigá qué hace el método Math.random()
-    return math.random()
-
+    return Math.random();
 }
 
   function esPositivo(numero) {
-    //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
+    //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo.
     //Si el número es positivo, devolver ---> "Es positivo"
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false 
-    if (numero > 0) {
+    if (numero === 0) {
+      return false
+    } else if (numero > 0) {
       return "Es positivo";
     }
     else {
@@ -204,7 +196,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre +  apellido;
+  var combinado = (nombre +" " + apellido);
   return combinado;
 
   
@@ -214,15 +206,13 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola" + nombre + "!"
-
-
+  return `hola${nombre}!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  return alto * ancho
+  return alto * ancho;
 }
 
 
@@ -236,7 +226,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return base * altura 
+  return (base * altura) / 2;
 }
 
 
