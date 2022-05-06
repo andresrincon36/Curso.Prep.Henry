@@ -158,11 +158,11 @@ function diaDeLaSemana(numeroDeDia) {
   
   if (numeroDeDia === 1 || numeroDeDia === 7) {
 
-    return "es fin de semana";
+    return "Es fin de semana";
   }
    if (numeroDeDia > 1 && numeroDeDia < 7) {
     
-     return "es dia Laboral";
+     return "Es dia Laboral";
    }
 } 
 
@@ -272,12 +272,12 @@ function continueStatement(numero) {
   
    while (i < 10) {
      i++;
-     numero = numero + 2;
-    valorArray.push(numero);
-
+  
      if (i === 5) {
        continue;
      }
+     numero = numero + 2;
+     valorArray.push(numero);
   }
   return valorArray;
 }
